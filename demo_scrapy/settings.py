@@ -33,7 +33,7 @@ DOWNLOADER_MIDDLEWARES = {
 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': 400,
 }
-DOWNLOAD_DELAY = 10
+DOWNLOAD_DELAY = 2
 
 FORMAT_TYPES = 'json'
 FEED_EXPORT_ENCODING = 'utf-8'
@@ -81,9 +81,9 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'demo_scrapy.pipelines.DemoScrapyPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'demo_scrapy.pipelines.ProductPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
