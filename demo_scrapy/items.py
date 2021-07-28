@@ -20,3 +20,9 @@ class ProductItem(scrapy.Item):
     price = scrapy.Field()
     price_sale = scrapy.Field()
     sold = scrapy.Field()
+
+class PItem(scrapy.Item):
+    name = scrapy.Field()
+    price = scrapy.Field()
+
+
